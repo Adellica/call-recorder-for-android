@@ -1,8 +1,9 @@
-/gen/
-/libs/android-support-v4.jar
-/bin/classes/
-/bin/classes*
-/bin/dexedLibs/
-/bin/resources.ap_
-/bin/res/
-/bin/AndroidManifest.xml
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
