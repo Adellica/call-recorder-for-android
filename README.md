@@ -1,5 +1,16 @@
 # call-recorder-for-android
 
+## Building
+
+```
+$ git clone <this-repo-url>
+$ cd call-recorder-for-android
+$ echo 'sdk.dir=$ANDROID_HOME' > local.properties # or your equivalent
+$ ./gradlew assembleDebug # produces ./app/build/outputs/apk/app-debug.apk
+```
+
+## About
+
 This android application allows you to record all incoming and outgoing calls from your phone. All your recorded calls are saved in 3gp files and can be sent from the application.
 
 You can enable/disable the recording during the call, or leave it enabled to record all the calls.
