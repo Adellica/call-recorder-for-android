@@ -27,7 +27,7 @@ Direct download of the apk: https://github.com/riul88/call-recorder-for-android/
 
 Compatible with Android 2.2 (API 8) or above
 
-Tested on Android 4.1.2, 4.2.2 and 4.4.2
+Tested on Android 4.1.2, 4.2.2, 4.4.2 and 6.0.1.
 
 Some devices with Android 4.4.2 and Android 5 are not able to start recording
 
