@@ -198,7 +198,11 @@ public class RecordService extends Service {
 		recorder = new MediaRecorder();
 
 		try {
-			recorder.setAudioSource(MediaRecorder.AudioSource.VOICE_CALL);
+			int source = MediaRecorder.AudioSource.VOICE_CALL;
+			// For Marshmallow and above, VOICE_CALL doesn't work but MIC does:
+			// https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#M
+			if(android.os.Build.VERSION.SDK_INT >= 23) source = MediaRecorder.AudioSource.MIC;
+			recorder.setAudioSource(source);
 			recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
 			recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
 			fileName = FileHelper.getFilename(phoneNumber);
